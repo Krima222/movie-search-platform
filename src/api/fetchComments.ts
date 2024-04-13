@@ -21,7 +21,7 @@ export async function fetchComments({
     },
   };
   const response = await fetch(
-    `https://api.kinopoisk.dev/v1.4/review?page=${page}&limit=10&selectFields=id&selectFields=author&selectFields=review&notNullFields=id&notNullFields=author&notNullFields=review&movieId=${id}`,
+    `https://api.kinopoisk.dev/v1.4/review?page=${page}&limit=3&selectFields=id&selectFields=author&selectFields=review&notNullFields=id&notNullFields=author&notNullFields=review&movieId=${id}`,
     options,
   );
   return (await response.json()) as CommentsResponse;
