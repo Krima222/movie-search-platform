@@ -14,15 +14,26 @@ export type MovieResponse = {
   rating: {
     kp: number;
     imdb: number;
-    filmCritics: number;
-    russianFilmCritics: number;
   };
+
   sequelsAndPrequels: {
     id: number;
     name: string;
     poster: {
       url: string;
       previewUrl: string;
+    };
+  }[];
+  similarMovies: {
+    id: number;
+    name: string;
+    poster: {
+      url: string;
+      previewUrl: string;
+    };
+    rating: {
+      kp: number;
+      imdb: number;
     };
   }[];
   total: number;

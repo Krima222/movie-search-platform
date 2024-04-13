@@ -1,1 +1,1 @@
-// export type episodesRequest = {};
+export type episodesRequest = {};
