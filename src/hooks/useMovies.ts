@@ -18,7 +18,7 @@ export function useMovies() {
   const obj: Params = {
     page: searchParams.get('page') ?? '1',
     limit: searchParams.get('limit') ?? '10',
-    year: searchParams.get('year') ?? '2000',
+    year: searchParams.get('year') ?? '2010',
     age: searchParams.get('ageRating') ?? '18',
     countrie: searchParams.get('countries.name') ?? 'США',
   };
