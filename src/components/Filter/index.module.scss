@@ -1,0 +1,33 @@
+.container {
+  box-sizing: border-box;
+
+  background: #1a1c23;
+  border-radius: 10px;
+  border: none;
+
+  padding: 8px 20px;
+
+  color: #dcd8d3;
+}
+
+.wrapper {
+  box-sizing: border-box;
+
+  background: #1a1c23;
+  border-radius: 10px;
+
+  padding: 0 20px;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+}
+
+.year {
+  color: #dcd8d3;
+
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}

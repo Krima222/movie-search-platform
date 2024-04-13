@@ -1,0 +1,25 @@
+.movie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
+}
+
+.name {
+  width: 160px;
+
+  text-decoration: none;
+
+  padding-top: 10px;
+
+  text-align: center;
+  white-space: pre-wrap;
+
+  color: #ececec;
+}
+
+@media (max-width: 576px) {
+  .name {
+    width: 100px;
+  }
+}

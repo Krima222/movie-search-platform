@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 10px;
+}
+
+.text {
+  b {
+    font-weight: 700;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  cursor: pointer;
+}
