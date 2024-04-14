@@ -1,6 +1,6 @@
 import type { CommentsResponse } from '../types/comments';
 
-const apiToken = process.env.REACT_APP_API_TOKEN;
+import { getApiToken } from '../utils/getApiToken';
 
 export async function fetchComments({
   id,
@@ -9,15 +9,11 @@ export async function fetchComments({
   id: string;
   page: string;
 }) {
-  if (!apiToken) {
-    throw new Error('VITE_API_TOKEN is not specified in the .env file');
-  }
-
   const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      'X-API-KEY': apiToken,
+      'X-API-KEY': getApiToken(),
     },
   };
   const response = await fetch(
