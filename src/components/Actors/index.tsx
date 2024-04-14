@@ -1,7 +1,7 @@
 import { useSearchParamChanger } from '../../hooks/useSearchParamChanger';
 import { useActors } from '../../hooks/useActors';
 
-import { Loader, Pagination } from '@mantine/core';
+import { Pagination } from '@mantine/core';
 
 import classes from './index.module.scss';
 
@@ -11,10 +11,6 @@ export function Actors({ movieid }: { movieid: string }) {
   const { data: actorsData } = useActors({
     id: movieid ?? '',
   });
-
-  if (!actorsData) {
-    return <Loader />;
-  }
 
   return (
     <>
@@ -53,7 +49,7 @@ export function Actors({ movieid }: { movieid: string }) {
           )}
         </>
       ) : (
-        <div>Актеров нет</div>
+        <div>Информации об актерах нет</div>
       )}
     </>
   );

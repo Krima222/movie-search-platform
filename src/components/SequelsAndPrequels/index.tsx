@@ -30,7 +30,7 @@ export function SequelsAndPrequels({
           </div>
         ))
       ) : (
-        <div>Сезонов и серии нет...</div>
+        <div>Информации о сезонах, сериях нет</div>
       )}
     </div>
   );
